@@ -5,16 +5,17 @@ import 'package:line_icons/line_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'Screenone.dart';
 
-void main() => runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    builder: (context, child) {
-      return Directionality(textDirection: TextDirection.ltr, child: child!);
-    },
-    title: 'GNav',
-    theme: ThemeData(
-      primaryColor: Colors.blue[500],
-    ),
-    home: Example()));
+void main() => runApp(
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'app_for_medicos',
+        theme: ThemeData.dark().copyWith(
+          primaryColor: Color(0xFF0A0E21),
+          scaffoldBackgroundColor: Color(0xFF0A0E21),
+        ),
+        home: Example(),
+      ),
+    );
 
 class Screenchange extends StatelessWidget {
   const Screenchange({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class Screenchange extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+        backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF1D1E33)),
       ),
       onPressed: () {
         Navigator.push(
@@ -70,15 +71,17 @@ class _ExampleState extends State<Example> {
       fontSize: 20.0,
       toastLength: Toast.LENGTH_SHORT,
       gravity: ToastGravity.BOTTOM,
-      backgroundColor: Colors.black,
-      textColor: Colors.purple[200],
+      textColor: Color(0xFFEB1555),
     );
   }
 
   int _selectedIndex = 1;
   List<Widget> _widgetOptions = <Widget>[
-    Container(),
     Container(
+      color: Color(0xFF0A0E21),
+    ),
+    Container(
+      color: Color(0xFF0A0E21),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
@@ -88,7 +91,7 @@ class _ExampleState extends State<Example> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'SansitaSwashed',
-                color: Colors.purple[400],
+                color: Color(0xFFEB1555),
                 // fontWeight: FontWeight.bold,
                 fontSize: 42.0,
               ),
@@ -96,121 +99,107 @@ class _ExampleState extends State<Example> {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
-            child: Card(
-              // child: Padding(
-              //   padding: EdgeInsets.fromLTRB(40.0, 35.0, 40.0, 35.0),
-              child: Screenchange(),
-            ),
+            child: Screenchange(),
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
-            child: Card(
-              // child: Padding(
-              //   padding: EdgeInsets.fromLTRB(40.0, 20.0, 40.0, 50.0),
-              child: TextButton(
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
-                ),
-                onPressed: () {
-                  showToast();
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Text(
-                      '2nd  Year',
-                      style: TextStyle(
-                        fontFamily: 'SansitaSwashed',
-                        color: Colors.white,
-                        fontSize: 38,
-                        // fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Icon(
-                      Icons.arrow_right_alt_rounded,
+            child: TextButton(
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xFF1D1E33)),
+              ),
+              onPressed: () {
+                showToast();
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text(
+                    '2nd  Year',
+                    style: TextStyle(
+                      fontFamily: 'SansitaSwashed',
                       color: Colors.white,
-                      size: 30.0,
+                      fontSize: 38,
+                      // fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
+                  ),
+                  Icon(
+                    Icons.arrow_right_alt_rounded,
+                    color: Colors.white,
+                    size: 30.0,
+                  ),
+                ],
               ),
             ),
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
-            child: Card(
-              // child: Padding(
-              //   padding: EdgeInsets.fromLTRB(40.0, 5.0, 40.0, 65.0),
-              child: TextButton(
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
-                ),
-                onPressed: () {
-                  showToast();
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Text(
-                      '3rd  Year',
-                      style: TextStyle(
-                        fontFamily: 'SansitaSwashed',
-                        color: Colors.white,
-                        fontSize: 38,
-                        // fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Icon(
-                      Icons.arrow_right_alt_rounded,
+            child: TextButton(
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xFF1D1E33)),
+              ),
+              onPressed: () {
+                showToast();
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text(
+                    '3rd  Year',
+                    style: TextStyle(
+                      fontFamily: 'SansitaSwashed',
                       color: Colors.white,
-                      size: 30.0,
+                      fontSize: 38,
+                      // fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
+                  ),
+                  Icon(
+                    Icons.arrow_right_alt_rounded,
+                    color: Colors.white,
+                    size: 30.0,
+                  ),
+                ],
               ),
             ),
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
-            child: Card(
-              // child: Padding(
-              //   padding: EdgeInsets.fromLTRB(40.0, 0.0, 40.0, 70.0),
-              child: TextButton(
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
-                ),
-                onPressed: () {
-                  showToast();
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Text(
-                      '4th  Year',
-                      style: TextStyle(
-                        fontFamily: 'SansitaSwashed',
-                        color: Colors.white,
-                        fontSize: 38,
-                        // fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Icon(
-                      Icons.arrow_right_alt_rounded,
+            child: TextButton(
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xFF1D1E33)),
+              ),
+              onPressed: () {
+                showToast();
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text(
+                    '4th  Year',
+                    style: TextStyle(
+                      fontFamily: 'SansitaSwashed',
                       color: Colors.white,
-                      size: 30.0,
+                      fontSize: 38,
+                      // fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
+                  ),
+                  Icon(
+                    Icons.arrow_right_alt_rounded,
+                    color: Colors.white,
+                    size: 30.0,
+                  ),
+                ],
               ),
             ),
           ),
         ],
       ),
     ),
-    Container(),
+    Container(
+      color: Color(0xFF0A0E21),
+    ),
   ];
 
   @override
@@ -244,54 +233,55 @@ class _ExampleState extends State<Example> {
           ],
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
-            child: GNav(
-              rippleColor: Colors.grey,
-              hoverColor: Colors.grey[500]!,
-              gap: 8,
-              activeColor: Colors.black,
-              iconSize: 24,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              duration: Duration(milliseconds: 400),
-              tabBackgroundColor: Colors.grey[100]!,
-              color: Colors.black,
-              tabs: [
-                GButton(
-                  icon: LineIcons.book,
-                  text: 'Your  Library',
-                  textStyle: TextStyle(
-                    color: Colors.purple[500],
-                    fontSize: 20.0,
-                    fontFamily: 'SansitaSwashed',
-                  ),
+          child: GNav(
+            backgroundColor: Color(0xFF0A0E21),
+            rippleColor: Colors.grey,
+            hoverColor: Colors.grey[500]!,
+            gap: 8,
+            activeColor: Colors.black,
+            iconSize: 24,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            duration: Duration(milliseconds: 400),
+            tabBackgroundColor: Colors.white,
+            color: Colors.black,
+            tabs: [
+              GButton(
+                icon: LineIcons.book,
+                iconColor: Colors.white,
+                text: 'Your  Library',
+                textStyle: TextStyle(
+                  color: Color(0xFFEB1555),
+                  fontSize: 20.0,
+                  fontFamily: 'SansitaSwashed',
                 ),
-                GButton(
-                  icon: LineIcons.search,
-                  text: 'Discover',
-                  textStyle: TextStyle(
-                    color: Colors.purple[500],
-                    fontSize: 20.0,
-                    fontFamily: 'SansitaSwashed',
-                  ),
+              ),
+              GButton(
+                icon: LineIcons.search,
+                iconColor: Colors.white,
+                text: 'Discover',
+                textStyle: TextStyle(
+                  color: Color(0xFFEB1555),
+                  fontSize: 20.0,
+                  fontFamily: 'SansitaSwashed',
                 ),
-                GButton(
-                  icon: LineIcons.user,
-                  text: 'Account',
-                  textStyle: TextStyle(
-                    color: Colors.purple[500],
-                    fontSize: 20.0,
-                    fontFamily: 'SansitaSwashed',
-                  ),
+              ),
+              GButton(
+                icon: LineIcons.user,
+                iconColor: Colors.white,
+                text: 'Account',
+                textStyle: TextStyle(
+                  color: Color(0xFFEB1555),
+                  fontSize: 20.0,
+                  fontFamily: 'SansitaSwashed',
                 ),
-              ],
-              selectedIndex: _selectedIndex,
-              onTabChange: (index) {
-                setState(() {
-                  _selectedIndex = index;
-                });
-              },
-            ),
+              ),
+            ],
+            selectedIndex: _selectedIndex,
+            onTabChange: (index) {
+              setState(() {
+                _selectedIndex = index;
+              });
+            },
           ),
         ),
       ),

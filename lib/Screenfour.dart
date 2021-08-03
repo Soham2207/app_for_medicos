@@ -12,8 +12,12 @@ class Screenfour extends StatefulWidget {
 class _ScreenfourState extends State<Screenfour> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-    Container(),
-    Container(),
+    Container(
+      color: Color(0xFF0A0E21),
+    ),
+    Container(
+      color: Color(0xFF0A0E21),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -46,47 +50,47 @@ class _ScreenfourState extends State<Screenfour> {
           ],
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
-            child: GNav(
-              rippleColor: Colors.grey,
-              hoverColor: Colors.grey[500]!,
-              gap: 8,
-              activeColor: Colors.black,
-              iconSize: 24,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              duration: Duration(milliseconds: 400),
-              tabBackgroundColor: Colors.grey[100]!,
-              color: Colors.black,
-              tabs: [
-                GButton(
-                  icon: LineIcons.book,
-                  text: 'Books',
-                  textStyle: TextStyle(
-                    color: Colors.purple[500],
-                    fontSize: 20.0,
-                    fontFamily: 'SansitaSwashed',
-                  ),
+          child: GNav(
+            backgroundColor: Color(0xFF0A0E21),
+            rippleColor: Colors.grey,
+            hoverColor: Colors.grey[500]!,
+            gap: 8,
+            activeColor: Colors.black,
+            iconSize: 24,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            duration: Duration(milliseconds: 400),
+            tabBackgroundColor: Colors.grey[100]!,
+            color: Colors.black,
+            tabs: [
+              GButton(
+                icon: LineIcons.book,
+                iconColor: Colors.white,
+                text: 'Books',
+                textStyle: TextStyle(
+                  color: Color(0xFFEB1555),
+                  fontSize: 20.0,
+                  fontFamily: 'SansitaSwashed',
                 ),
-                GButton(
-                  icon: LineIcons.videoFile,
-                  text: 'Videos',
-                  textStyle: TextStyle(
-                    color: Colors.purple[500],
-                    fontSize: 20.0,
-                    fontFamily: 'SansitaSwashed',
-                  ),
+              ),
+              GButton(
+                icon: LineIcons.videoFile,
+                iconColor: Colors.white,
+                text: 'Videos',
+                textStyle: TextStyle(
+                  color: Color(0xFFEB1555),
+                  fontSize: 20.0,
+                  fontFamily: 'SansitaSwashed',
                 ),
-              ],
-              selectedIndex: _selectedIndex,
-              onTabChange: (index) {
-                setState(
-                  () {
-                    _selectedIndex = index;
-                  },
-                );
-              },
-            ),
+              ),
+            ],
+            selectedIndex: _selectedIndex,
+            onTabChange: (index) {
+              setState(
+                () {
+                  _selectedIndex = index;
+                },
+              );
+            },
           ),
         ),
       ),
