@@ -5,21 +5,22 @@ import 'package:line_icons/line_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'Screenone.dart';
 
-void main() => runApp(
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'app_for_medicos',
-        theme: ThemeData.dark().copyWith(
-          primaryColor: Color(0xFF0A0E21),
-          scaffoldBackgroundColor: Color(0xFF0A0E21),
-        ),
-        home: Example(),
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'app_for_medicos',
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Color(0xFF0A0E21),
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-    );
+      home: Example(),
+    ),
+  );
+}
 
 class Screenchange extends StatelessWidget {
-  const Screenchange({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -236,7 +237,7 @@ class _ExampleState extends State<Example> {
           child: GNav(
             backgroundColor: Color(0xFF0A0E21),
             rippleColor: Colors.grey,
-            hoverColor: Colors.grey[500]!,
+            hoverColor: Colors.grey[500],
             gap: 8,
             activeColor: Colors.black,
             iconSize: 24,

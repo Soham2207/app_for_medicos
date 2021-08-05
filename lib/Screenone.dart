@@ -7,8 +7,6 @@ import 'Screenthree.dart';
 import 'Screenfour.dart';
 
 class Screenone extends StatelessWidget {
-  const Screenone({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

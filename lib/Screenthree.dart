@@ -4,7 +4,6 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 
 class Screenthree extends StatefulWidget {
-  const Screenthree({Key? key}) : super(key: key);
   @override
   _ScreenthreeState createState() => _ScreenthreeState();
 }
@@ -53,13 +52,13 @@ class _ScreenthreeState extends State<Screenthree> {
           child: GNav(
             backgroundColor: Color(0xFF0A0E21),
             rippleColor: Colors.grey,
-            hoverColor: Colors.grey[500]!,
+            hoverColor: Colors.grey[500],
             gap: 8,
             activeColor: Colors.black,
             iconSize: 24,
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             duration: Duration(milliseconds: 400),
-            tabBackgroundColor: Colors.grey[100]!,
+            tabBackgroundColor: Colors.grey[100],
             color: Colors.black,
             tabs: [
               GButton(
