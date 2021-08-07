@@ -10,8 +10,6 @@ class Screentwo extends StatefulWidget {
 }
 
 class _ScreentwoState extends State<Screentwo> {
-  LaunchUrl launchUrl = LaunchUrl();
-
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
     ListView(
@@ -48,8 +46,9 @@ class _ScreentwoState extends State<Screentwo> {
                   ),
                   Expanded(
                     child: TextButton(
-                      onPressed: () async {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/28');
+                      onPressed: () {
+                        LaunchUrlState()
+                            .openTelegram('https://t.me/MedFlix_2/28');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -101,7 +100,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/37');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -153,7 +152,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/38');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -205,7 +204,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/46');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -257,7 +256,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/78');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -309,7 +308,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/80');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -361,7 +360,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/643');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -413,7 +412,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/15');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -465,7 +464,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/17');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -517,7 +516,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/18');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -569,7 +568,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/21');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -621,7 +620,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/82');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -673,7 +672,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/459');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -725,7 +724,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/455');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -777,8 +776,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState()
-                            .setstate('https://t.me/MedFlix_2/1547');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -830,8 +828,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState()
-                            .setstate('https://t.me/MedFlix_2/1343');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -883,8 +880,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState()
-                            .setstate('https://t.me/docinmayking/1227');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -936,7 +932,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/12');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -988,7 +984,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/13');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -1040,7 +1036,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/14');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -1092,7 +1088,7 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState().setstate('https://t.me/MedFlix_2/73');
+                        LaunchUrlState().openTelegram('');
                       },
                       child: Text(
                         'Open in Telegram',
@@ -1110,8 +1106,138 @@ class _ScreentwoState extends State<Screentwo> {
         ),
       ],
     ),
-    Container(
-      color: Color(0xFF0A0E21),
+    ListView(
+      children: <Widget>[
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/263');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- The Upper Extremity',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+        Divider(
+          height: 5.0,
+        ),
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () async {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/264');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- The Trunk',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+        Divider(
+          height: 5.0,
+        ),
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () async {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/265');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- Internal Organs',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+        Divider(
+          height: 5.0,
+        ),
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () async {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/266');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- The Lower Extremity',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+        Divider(
+          height: 5.0,
+        ),
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () async {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/267');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- Head and Neck Part-1',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+        Divider(
+          height: 5.0,
+        ),
+        Container(
+          width: 130.0,
+          height: 130.0,
+          color: Color(0xFF1D1E33),
+          child: TextButton(
+            onPressed: () async {
+              LaunchUrlState()
+                  .openTelegram('https://t.me/Essential_Anatomy/268');
+            },
+            child: Text(
+              'Atlas of Human Anatomy- Head and Neck Part-2',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 25.0,
+              ),
+            ),
+          ),
+        ),
+      ],
     ),
     Container(
       color: Color(0xFF0A0E21),

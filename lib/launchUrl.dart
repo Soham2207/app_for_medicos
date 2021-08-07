@@ -7,17 +7,12 @@ class LaunchUrl extends StatefulWidget {
 }
 
 class LaunchUrlState extends State<LaunchUrl> {
-  Future<void> launched;
-  Future<void> openInTelegram(String url) async {
+  Future<void> openTelegram(String url) async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
       throw 'Could not launch $url';
     }
-  }
-
-  void setstate(String url) async {
-    await (launched = openInTelegram('$url'));
   }
 
   @override
