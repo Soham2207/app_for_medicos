@@ -3,10 +3,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 class LaunchUrl extends StatefulWidget {
   @override
-  LaunchUrlState createState() => LaunchUrlState();
+  _LaunchUrlState createState() => _LaunchUrlState();
 }
 
-class LaunchUrlState extends State<LaunchUrl> {
+class _LaunchUrlState extends State<LaunchUrl> {
   Future<void> openTelegram(String url) async {
     if (await canLaunch(url)) {
       await launch(url);

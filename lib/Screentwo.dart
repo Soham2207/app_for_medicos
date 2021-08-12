@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 import 'launchUrl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Screentwo extends StatefulWidget {
   @override
@@ -10,6 +11,14 @@ class Screentwo extends StatefulWidget {
 }
 
 class _ScreentwoState extends State<Screentwo> {
+  Future<void> openTelegram(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
     ListView(
@@ -34,7 +43,10 @@ class _ScreentwoState extends State<Screentwo> {
                 children: <Widget>[
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        LaunchUrl().createState().openTelegram(
+                            'https://firebasestorage.googleapis.com/v0/b/app-for-medicos-41492.appspot.com/o/Anatomy%2FAnatomy-%20Dr.%20Ashwani%20Sir%20Notes.pdf?alt=media&token=8ed82997-9557-43ab-bfe2-839fe46967c6');
+                      },
                       child: Text(
                         'Open in App',
                         style: TextStyle(
@@ -47,7 +59,8 @@ class _ScreentwoState extends State<Screentwo> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        LaunchUrlState()
+                        LaunchUrl()
+                            .createState()
                             .openTelegram('https://t.me/MedFlix_2/28');
                       },
                       child: Text(
@@ -67,1182 +80,1183 @@ class _ScreentwoState extends State<Screentwo> {
         Divider(
           height: 3.0,
         ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'McMinn’s and Abrahams’ Clinical Atlas of Human Anatomy',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Anatomy Notes- Dr. Rajesh Kaushal',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Moore’s Clinically Oriented Anatomy- 7th Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Human Genetics – SD Gangane',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Textbook of Clinical Embryology- Vishram Shah- 2nd Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Lange Case Files Anatomy 2nd Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Vishram Singh: Lower Limb and Abdomen Human Anatomy Vol 2',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Vishram Singh: Upper Limb and Thorax Human Anatomy Vol 1',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Vishram Singh: General Anatomy 2nd Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Vishram Singh: Human Anatomy Vol 3',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Textbook of Clinical Embryology: Vishram Singh',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Vishram Singh: Neuroanatomy 3rd Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Netter’s Atlas of Human Anatomy 7th Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Gray’s Anatomy for Students',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Inderbir Singh: Textbook of Human Histology',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Anatomy Marrow 5th Ed',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'BDC: Upper Limb and Thorax Vol.1',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'BDC: Head and Neck + Neuroanatomy Vol. 3,4',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'BDC: Lower Limb and Abdomen Vol2',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-        Divider(
-          height: 3.0,
-        ),
-        Container(
-          color: Color(0xFF1D1E33),
-          child: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  'Langman: Medical Embryology',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'SansitaSwashed',
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Open in App',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () {
-                        LaunchUrlState().openTelegram('');
-                      },
-                      child: Text(
-                        'Open in Telegram',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-      ],
-    ),
-    ListView(
-      children: <Widget>[
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/263');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- The Upper Extremity',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
-        Divider(
-          height: 5.0,
-        ),
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () async {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/264');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- The Trunk',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
-        Divider(
-          height: 5.0,
-        ),
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () async {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/265');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- Internal Organs',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
-        Divider(
-          height: 5.0,
-        ),
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () async {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/266');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- The Lower Extremity',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
-        Divider(
-          height: 5.0,
-        ),
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () async {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/267');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- Head and Neck Part-1',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
-        Divider(
-          height: 5.0,
-        ),
-        Container(
-          width: 130.0,
-          height: 130.0,
-          color: Color(0xFF1D1E33),
-          child: TextButton(
-            onPressed: () async {
-              LaunchUrlState()
-                  .openTelegram('https://t.me/Essential_Anatomy/268');
-            },
-            child: Text(
-              'Atlas of Human Anatomy- Head and Neck Part-2',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25.0,
-              ),
-            ),
-          ),
-        ),
+        // Container(
+        //   color: Color(0xFF1D1E33),
+        //   child: Column(
+        //     children: <Widget>[
+        //       Padding(
+        //         padding: const EdgeInsets.all(10.0),
+        //         child: Text(
+        //           'McMinn’s and Abrahams’ Clinical Atlas of Human Anatomy',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             fontFamily: 'SansitaSwashed',
+        //             fontSize: 25.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //       Row(
+        //         children: <Widget>[
+        //           Expanded(
+        //             child: TextButton(
+        //               onPressed: () {},
+        //               child: Text(
+        //                 'Open in App',
+        //                 style: TextStyle(
+        //                   color: Colors.blue,
+        //                   fontSize: 20.0,
+        //                 ),
+        //               ),
+        //             ),
+        //           ),
+        //           Expanded(
+        //             child: TextButton(
+        //               onPressed: () {
+        //                 LaunchUrlState().openTelegram('');
+        //               },
+        //               child: Text(
+        //                 'Open in Telegram',
+        //                 style: TextStyle(
+        //                   color: Colors.blue,
+        //                   fontSize: 20.0,
+        //                 ),
+        //               ),
+        //             ),
+        //           ),
+        //         ],
+        //       )
+        //     ],
+        //   ),
+        // ),
+        // Divider(
+        //   height: 3.0,
+        // ),
+        // Container(
+        //   color: Color(0xFF1D1E33),
+        //   child: Column(
+        //     children: <Widget>[
+        //       Padding(
+        //         padding: const EdgeInsets.all(10.0),
+        //         child: Text(
+        //           'Anatomy Notes- Dr. Rajesh Kaushal',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             fontFamily: 'SansitaSwashed',
+        //             fontSize: 25.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //       Row(
+        //         children: <Widget>[
+        //           Expanded(
+        //             child: TextButton(
+        //               onPressed: () {},
+        //               child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Moore’s Clinically Oriented Anatomy- 7th Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Human Genetics – SD Gangane',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Textbook of Clinical Embryology- Vishram Shah- 2nd Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Lange Case Files Anatomy 2nd Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Vishram Singh: Lower Limb and Abdomen Human Anatomy Vol 2',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Vishram Singh: Upper Limb and Thorax Human Anatomy Vol 1',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Vishram Singh: General Anatomy 2nd Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Vishram Singh: Human Anatomy Vol 3',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Textbook of Clinical Embryology: Vishram Singh',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Vishram Singh: Neuroanatomy 3rd Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Netter’s Atlas of Human Anatomy 7th Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Gray’s Anatomy for Students',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Inderbir Singh: Textbook of Human Histology',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Anatomy Marrow 5th Ed',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'BDC: Upper Limb and Thorax Vol.1',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'BDC: Head and Neck + Neuroanatomy Vol. 3,4',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'BDC: Lower Limb and Abdomen Vol2',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 3.0,
+        //     ),
+        //     Container(
+        //       color: Color(0xFF1D1E33),
+        //       child: Column(
+        //         children: <Widget>[
+        //           Padding(
+        //             padding: const EdgeInsets.all(10.0),
+        //             child: Text(
+        //               'Langman: Medical Embryology',
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontFamily: 'SansitaSwashed',
+        //                 fontSize: 25.0,
+        //                 fontWeight: FontWeight.bold,
+        //               ),
+        //             ),
+        //           ),
+        //           Row(
+        //             children: <Widget>[
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {},
+        //                   child: Text(
+        //                     'Open in App',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //               Expanded(
+        //                 child: TextButton(
+        //                   onPressed: () {
+        //                     LaunchUrlState().openTelegram('');
+        //                   },
+        //                   child: Text(
+        //                     'Open in Telegram',
+        //                     style: TextStyle(
+        //                       color: Colors.blue,
+        //                       fontSize: 20.0,
+        //                     ),
+        //                   ),
+        //                 ),
+        //               ),
+        //             ],
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        // ListView(
+        //   children: <Widget>[
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/263');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- The Upper Extremity',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 5.0,
+        //     ),
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () async {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/264');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- The Trunk',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 5.0,
+        //     ),
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () async {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/265');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- Internal Organs',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 5.0,
+        //     ),
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () async {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/266');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- The Lower Extremity',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 5.0,
+        //     ),
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () async {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/267');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- Head and Neck Part-1',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Divider(
+        //       height: 5.0,
+        //     ),
+        //     Container(
+        //       width: 130.0,
+        //       height: 130.0,
+        //       color: Color(0xFF1D1E33),
+        //       child: TextButton(
+        //         onPressed: () async {
+        //           LaunchUrlState()
+        //               .openTelegram('https://t.me/Essential_Anatomy/268');
+        //         },
+        //         child: Text(
+        //           'Atlas of Human Anatomy- Head and Neck Part-2',
+        //           textAlign: TextAlign.center,
+        //           style: TextStyle(
+        //             color: Colors.blue,
+        //             fontSize: 25.0,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
       ],
     ),
     Container(
       color: Color(0xFF0A0E21),
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
