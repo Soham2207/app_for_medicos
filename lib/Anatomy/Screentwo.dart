@@ -5,6 +5,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'anatomy_pdfs.dart';
 import 'anatomy_videos.dart';
+import 'anatomy_apps_flashcards.dart';
 
 class Screentwo extends StatefulWidget {
   @override
@@ -12,21 +13,11 @@ class Screentwo extends StatefulWidget {
 }
 
 class _ScreentwoState extends State<Screentwo> {
-  Future<void> openTelegram(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
     AnatomyPdfs(),
     AnatomyVideos(),
-    Container(
-      color: Color(0xFF0A0E21),
-    ),
+    AnatomyAppsAndFlashcards(),
   ];
 
   @override
@@ -37,7 +28,7 @@ class _ScreentwoState extends State<Screentwo> {
         centerTitle: true,
         elevation: 20,
         title: const Text(
-          'Medico',
+          'Anatomy',
           style: TextStyle(
             fontFamily: 'SansitaSwashed',
             color: Colors.white,

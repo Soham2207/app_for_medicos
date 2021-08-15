@@ -6,7 +6,6 @@ import 'loginpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'app_for_medicos',
+      title: 'Medico',
       theme: ThemeData.dark().copyWith(
         primaryColor: Color(0xFF0A0E21),
         scaffoldBackgroundColor: Color(0xFF0A0E21),

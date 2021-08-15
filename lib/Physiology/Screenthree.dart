@@ -2,31 +2,29 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
+import 'physiology_pdfs.dart';
+import 'physiology_videos.dart';
 
-class Screenfour extends StatefulWidget {
+class Screenthree extends StatefulWidget {
   @override
-  _ScreenfourState createState() => _ScreenfourState();
+  _ScreenthreeState createState() => _ScreenthreeState();
 }
 
-class _ScreenfourState extends State<Screenfour> {
+class _ScreenthreeState extends State<Screenthree> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-    Container(
-      color: Color(0xFF0A0E21),
-    ),
-    Container(
-      color: Color(0xFF0A0E21),
-    ),
+    PhysiologyPdfs(),
+    PhysiologyVideos(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0A0E21),
       appBar: AppBar(
         centerTitle: true,
         elevation: 20,
         title: const Text(
-          'Medico',
+          'Physiology',
           style: TextStyle(
             fontFamily: 'SansitaSwashed',
             color: Colors.white,
@@ -56,7 +54,7 @@ class _ScreenfourState extends State<Screenfour> {
             gap: 8,
             activeColor: Colors.black,
             iconSize: 24,
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
             duration: Duration(milliseconds: 400),
             tabBackgroundColor: Colors.grey[100],
             color: Colors.black,

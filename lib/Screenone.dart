@@ -1,10 +1,10 @@
-import 'package:app_for_medicos/Screenthree.dart';
+import 'package:app_for_medicos/Physiology/Screenthree.dart';
 import 'package:app_for_medicos/Anatomy/Screentwo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Anatomy/Screentwo.dart';
-import 'Screenthree.dart';
-import 'Screenfour.dart';
+import 'Physiology/Screenthree.dart';
+import 'BioChemistry/Screenfour.dart';
 
 class Screenone extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class Screenone extends StatelessWidget {
         centerTitle: true,
         elevation: 20,
         title: const Text(
-          'Medico',
+          '1st Year',
           style: TextStyle(
             fontFamily: 'SansitaSwashed',
             color: Colors.white,

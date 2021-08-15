@@ -29,16 +29,48 @@ class _AccountState extends State<Account> {
           Padding(
             padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
             child: TextButton(
+              onPressed: () {
+                LaunchUrl().createState().openTelegram(
+                    'https://play.google.com/store/apps/details?id=org.telegram.messenger');
+              },
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      'Download Telegram App',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Icon(
+                      Icons.arrow_circle_down_outlined,
+                      size: 30.0,
+                      color: Colors.lightBlueAccent,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 10.0),
+            child: TextButton(
                 onPressed: () {
                   LaunchUrl().createState().openTelegram(
-                      'https://play.google.com/store/apps/details?id=org.telegram.messenger');
+                      'https://play.google.com/store/apps/details?id=com.ichi2.anki');
                 },
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       flex: 2,
                       child: Text(
-                        'Download Telegram App',
+                        'Download AnkiDroid App',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
@@ -56,33 +88,35 @@ class _AccountState extends State<Account> {
                 )),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 10.0),
+            padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
             child: TextButton(
-                onPressed: () {
-                  LaunchUrl().createState().openTelegram(
-                      'https://play.google.com/store/apps/details?id=com.ichi2.anki');
-                },
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      flex: 2,
-                      child: Text(
-                        'Download AnkiDroid App',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
-                        ),
+              onPressed: () {
+                LaunchUrl().createState().openTelegram(
+                    'https://moddroid.com/human-anatomy-atlas-2021.html');
+              },
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      'Download Human Anatomy Atlas 2021 App',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
                       ),
                     ),
-                    Expanded(
-                      child: Icon(
-                        Icons.arrow_circle_down_outlined,
-                        size: 30.0,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    )
-                  ],
-                )),
+                  ),
+                  Expanded(
+                    child: Icon(
+                      Icons.arrow_circle_down_outlined,
+                      size: 30.0,
+                      color: Colors.lightBlueAccent,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           Divider(
             height: 10.0,

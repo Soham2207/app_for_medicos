@@ -2,31 +2,29 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
+import 'bio_pdfs.dart';
+import 'bio_videos.dart';
 
-class Screenthree extends StatefulWidget {
+class Screenfour extends StatefulWidget {
   @override
-  _ScreenthreeState createState() => _ScreenthreeState();
+  _ScreenfourState createState() => _ScreenfourState();
 }
 
-class _ScreenthreeState extends State<Screenthree> {
+class _ScreenfourState extends State<Screenfour> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-    Container(
-      color: Color(0xFF0A0E21),
-    ),
-    Container(
-      color: Color(0xFF0A0E21),
-    ),
+    Bio_PDFs(),
+    Bio_videos(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF0A0E21),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
         elevation: 20,
         title: const Text(
-          'Medico',
+          'Biochemistry',
           style: TextStyle(
             fontFamily: 'SansitaSwashed',
             color: Colors.white,
@@ -56,7 +54,7 @@ class _ScreenthreeState extends State<Screenthree> {
             gap: 8,
             activeColor: Colors.black,
             iconSize: 24,
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
             duration: Duration(milliseconds: 400),
             tabBackgroundColor: Colors.grey[100],
             color: Colors.black,
