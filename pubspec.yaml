@@ -14,7 +14,10 @@ dependencies:
   fluttertoast: ^8.0.7
   google_nav_bar: ^5.0.5
   line_icons: ^2.0.1
-  url_launcher: ^6.0.9
+  url_launcher: ^5.7.10
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.1
+
 
 dev_dependencies:
   flutter_test:
@@ -38,3 +41,6 @@ flutter:
   - family: SansitaSwashed
     fonts:
      - asset: fonts/SansitaSwashed-Regular.ttf
+  - family: SourceSansPro
+    fonts:
+      - asset: fonts/SourceSansPro-Regular.ttf

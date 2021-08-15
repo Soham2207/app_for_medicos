@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "978267379228",
-    "project_id": "app-for-medicos-41492",
-    "storage_bucket": "app-for-medicos-41492.appspot.com"
+    "project_number": "60841306647",
+    "project_id": "appformedicos",
+    "storage_bucket": "appformedicos.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:978267379228:android:f2b425696c1e33832c71d9",
+        "mobilesdk_app_id": "1:60841306647:android:6a788b5522347bc1524a52",
         "android_client_info": {
           "package_name": "com.example.app_for_medicos"
         }
       },
       "oauth_client": [
         {
-          "client_id": "978267379228-98gh97ffieqrrlsgdueqfi3eufjgfg32.apps.googleusercontent.com",
+          "client_id": "60841306647-4a13dgb2mva31iblnqasrl29g1sngneq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCWWn-Irt_ARn_gSz5O2OFYICWgMRVbbkA"
+          "current_key": "AIzaSyApzPyWzaXvYWJtfhCg2l3lU70pGooMIQQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "978267379228-98gh97ffieqrrlsgdueqfi3eufjgfg32.apps.googleusercontent.com",
+              "client_id": "60841306647-4a13dgb2mva31iblnqasrl29g1sngneq.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

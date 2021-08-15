@@ -1,8 +1,8 @@
 import 'package:app_for_medicos/Screenthree.dart';
-import 'package:app_for_medicos/Screentwo.dart';
+import 'package:app_for_medicos/Anatomy/Screentwo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Screentwo.dart';
+import 'Anatomy/Screentwo.dart';
 import 'Screenthree.dart';
 import 'Screenfour.dart';
 
