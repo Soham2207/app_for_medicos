@@ -13,7 +13,7 @@ class Bio_videos extends StatelessWidget {
             child: TextButton(
               onPressed: () {
                 LaunchUrl().createState().openTelegram(
-                    ' youtube.com/c/BiochemistrybyDrRajeshJambhulkar/playlists');
+                    'https://www.youtube.com/c/BiochemistrybyDrRajeshJambhulkar/playlists');
               },
               child: Row(
                 children: [
