@@ -17,6 +17,7 @@ dependencies:
   url_launcher: ^5.7.10
   firebase_core: ^0.7.0
   firebase_auth: ^0.20.1
+  syncfusion_flutter_pdfviewer: ^18.4.49-beta
 
 
 dev_dependencies:
