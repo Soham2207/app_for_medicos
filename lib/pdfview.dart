@@ -19,28 +19,6 @@ class _PdfViewerState extends State<PdfViewer> {
     return Scaffold(
       appBar: AppBar(
         title: Text(name),
-        actions: <Widget>[
-          IconButton(
-            onPressed: () {
-              _pdfViewerKey.currentState?.openBookmarkView();
-            },
-            icon: Icon(
-              Icons.bookmark,
-              color: Colors.white,
-              semanticLabel: 'Bookmark',
-            ),
-          ),
-          IconButton(
-            onPressed: () {
-              _pdfViewerController.zoomLevel = 2;
-            },
-            icon: Icon(
-              Icons.zoom_in,
-              color: Colors.white,
-              semanticLabel: 'Zoom',
-            ),
-          ),
-        ],
       ),
       body: SfPdfViewer.network(
         link,
@@ -48,8 +26,6 @@ class _PdfViewerState extends State<PdfViewer> {
       ),
     );
   }
-
-
 
   Widget build(BuildContext context) {
     return Container();
