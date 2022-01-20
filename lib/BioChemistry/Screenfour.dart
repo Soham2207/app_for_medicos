@@ -54,7 +54,7 @@ class _ScreenfourState extends State<Screenfour> {
             gap: 8,
             activeColor: Colors.black,
             iconSize: 24,
-            padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 12),
             duration: Duration(milliseconds: 400),
             tabBackgroundColor: Colors.grey[100],
             color: Colors.black,
