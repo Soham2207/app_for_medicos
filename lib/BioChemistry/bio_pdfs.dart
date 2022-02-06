@@ -10,17 +10,6 @@ class Bio_PDFs extends StatefulWidget {
 }
 
 class _Bio_PDFsState extends State<Bio_PDFs> {
-  void navigate(String name, String link) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          return PdfViewer().createState().pdfviewing(name, link);
-        },
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
