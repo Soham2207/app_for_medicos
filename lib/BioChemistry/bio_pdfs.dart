@@ -39,8 +39,13 @@ class _Bio_PDFsState extends State<Bio_PDFs> {
           Heading(text: 'Notes'),
         );
       }
-
       if (i == 7) {
+        containerList.add(
+          Heading(text: 'Dr.Rajesh Jambhulkar Notes'),
+        );
+      }
+
+      if (i == 25) {
         containerList.add(
           Heading(text: 'Review Books'),
         );
@@ -57,7 +62,7 @@ class _Bio_PDFsState extends State<Bio_PDFs> {
       containerList.add(newItem);
 
       if (i < Constants.BioChem_bookName.length - 1 &&
-          (i == 1 || i == 5 || i == 6)) {
+          (i == 1 || i == 5 || i == 6 || i == 24)) {
         var newdivider = Divider(
           height: 3.0,
           color: Colors.white,
