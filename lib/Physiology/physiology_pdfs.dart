@@ -29,12 +29,12 @@ class _PhysiologyPdfsState extends State<PhysiologyPdfs> {
           text: 'Standard Books',
         ));
       }
-      if (i == 4) {
+      if (i == 5) {
         containerList.add(Heading(
           text: 'Indian Authors',
         ));
       }
-      if (i == 7) {
+      if (i == 9) {
         containerList.add(Heading(
           text: 'Notes',
         ));
@@ -46,7 +46,7 @@ class _PhysiologyPdfsState extends State<PhysiologyPdfs> {
           firebaseLink: Constants.Physiology_firelink,
           Ncontext: context);
       containerList.add(newItem);
-      if (i < Constants.Physiology_bookName.length - 1 && (i == 3 || i == 6)) {
+      if (i < Constants.Physiology_bookName.length - 1 && (i == 4 || i == 8)) {
         var newdivider = Divider(
           height: 3.0,
           color: Colors.white,
