@@ -65,15 +65,18 @@ List<String> Physiology_bookName = [
   'Guyton and Hall – Medical Physiology',
   'Ganong Student’s Edition',
   'Berne and Levy Physiology',
-  'Physiology Lange Case Files', //breakpoint
+  'Physiology Lange Case Files',
+  'Physicon (Guyton Summary)', //breakpoint
   //Indian Authors:
   'Indu Khurana Physiology',
   'AK Jain – Physiology',
-  'Sembulingam Physiology', //breakpoint
+  'Sembulingam Physiology',
+  'GK Pal (Volume 1 and 2)' ,//breakpoint
   //Notes:
   'Physiology Exam Preparatory Manual -Vijaya Joshi',
   'Marrow Notes',
   'Unique Physiology',
+  'BJ Notes'
 ];
 
 List<String> Physiology_telelink = [
@@ -82,15 +85,18 @@ List<String> Physiology_telelink = [
   'https://t.me/app_for_medicos_by_techycrafts/6',
   'https://t.me/app_for_medicos_by_techycrafts/11',
   'https://t.me/MedFlix_2/832',
-  'https://t.me/MedFlix_2/637', //breakpoint
+  'https://t.me/MedFlix_2/637', 
+  'https://t.me/app_for_medicos_by_techycrafts/22', //breakpoint
   //Indian Authors:
   'https://t.me/app_for_medicos_by_techycrafts/9',
   'https://t.me/app_for_medicos_by_techycrafts/8',
-  'https://t.me/app_for_medicos_by_techycrafts/10', //breakpoint
+  'https://t.me/app_for_medicos_by_techycrafts/10',
+  'https://t.me/app_for_medicos_by_techycrafts/23',//breakpoint
   //Notes:
   'https://t.me/app_for_medicos_by_techycrafts/7',
   'https://t.me/docinmayking/1228',
   'https://t.me/app_for_medicos_by_techycrafts/12',
+  'https://t.me/app_for_medicos_by_techycrafts/24'
 ];
 
 List<String> Physiology_firelink = [
@@ -100,14 +106,17 @@ List<String> Physiology_firelink = [
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FGanongs%20Medical%20Physiology(26th%20Ed).pdf?alt=media&token=ae9e6418-ce2a-4923-92b3-e53b523303b8',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FPhysio%20berne%20and%20levi.pdf?alt=media&token=3e9d9889-57c2-4ebe-ba2f-ec82e3255f01',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FPhysiology%20Lange%20Case%20Files.pdf?alt=media&token=73b263b5-f1d3-47a5-8b00-b513188715a4',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2F431533315_Physicon_The_Reliable_Icon_in_Physiology_2012_PDF_UnitedVRG.pdf?alt=media&token=c403c58d-ae8b-43a5-828d-f6e425a8c978',
   //Indian Authors:
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FIndu%20Khurana%20Physiology.pdf?alt=media&token=13c94bb0-6cb3-44be-974e-16f05c87d0bc',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FAK%20Jain%20Physiology.pdf?alt=media&token=c7347387-4ab9-484d-86e9-21df4be32054',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FK_Sembulingam_Essentials_of_Medical_Physiology%2C_6th_Edition.pdf?alt=media&token=68f4e0e2-840c-4315-83ce-547842b35dd2',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FGK%20Pal%20Physiology%20(1st%20Ed).pdf?alt=media&token=28025732-fbdb-46a7-8256-d97ca115deb1',
   //Notes:
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FPhysio%20Prep%20Manual.pdf?alt=media&token=5b6bf2c7-c689-4641-b5f0-e6a9888f7e3b',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FPhysiology%20Marrow%20Edition%205%20Notes%20%40docinmayking.pdf?alt=media&token=1468eb41-c7a9-45b2-8a93-7dee78647236',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FUnique%20Physiology.pdf?alt=media&token=bd60e5a4-bc12-43fe-87b6-0f2d53644373',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FBJ%20NOTES.pdf?alt=media&token=e79b0ec1-3f6d-4ffd-9000-e48d86d8b9c7'
 ];
 
 List<String> BioChem_bookName = [
