@@ -121,9 +121,28 @@ List<String> BioChem_bookName = [
   'Essentials of Biochem – Pankaja Naik',
   'Prasad’s Textbook of Biochem', //breakpoint
   //Notes:
-  'Singhal Biochem', //breakpoint
-  //Review Books:
-  'Rebecca James Perumcheril Self-assessment and review of Biochem',
+  'Singhal Biochem',
+  //Dr Jambhulkar Notes:
+  'Acid Base Balance',
+  'Biological Oxidation',
+  'Cancer and Tumor Markers ETS',
+  'Carbohydrates',
+  'Chromatography',
+  'DNA Technology',
+  'DNA',
+  'Enzymes',
+  'Extracellular Matrix',
+  'Hemoglobin and Porphyria',
+  'Lipid Chemistry and Metabolism',
+  'Mineral Metabolism',
+  'Nucleotide Metabolism',
+  'Organ Function Tests',
+  'Plasma Proteins',
+  'Protein Chemistry',
+  'Vitamins',
+  'Carvo' // breakpoint
+      //Review Books:
+      'Rebecca James Perumcheril Self-assessment and review of Biochem',
 ];
 
 List<String> BioChem_telegramLink = [
@@ -138,6 +157,25 @@ List<String> BioChem_telegramLink = [
   'https://t.me/MedFlix_2/1166',
   //Notes:
   'https://t.me/app_for_medicos_by_techycrafts/16',
+  //Dr. Rajesh Jambhulkar Notes:
+  'https://t.me/app_for_medicos_by_techycrafts/25',
+  'https://t.me/app_for_medicos_by_techycrafts/26',
+  'https://t.me/app_for_medicos_by_techycrafts/27',
+  'https://t.me/app_for_medicos_by_techycrafts/28',
+  'https://t.me/app_for_medicos_by_techycrafts/29',
+  'https://t.me/app_for_medicos_by_techycrafts/30',
+  'https://t.me/app_for_medicos_by_techycrafts/39',
+  'https://t.me/app_for_medicos_by_techycrafts/33',
+  'https://t.me/app_for_medicos_by_techycrafts/31',
+  'https://t.me/app_for_medicos_by_techycrafts/32',
+  'https://t.me/app_for_medicos_by_techycrafts/34',
+  'https://t.me/app_for_medicos_by_techycrafts/35',
+  'https://t.me/app_for_medicos_by_techycrafts/36',
+  'https://t.me/app_for_medicos_by_techycrafts/37',
+  'https://t.me/app_for_medicos_by_techycrafts/38',
+  'https://t.me/app_for_medicos_by_techycrafts/41',
+  'https://t.me/app_for_medicos_by_techycrafts/40',
+  'https://t.me/app_for_medicos_by_techycrafts/42',
   //Review Books:
   'https://t.me/MedFlix_2/121',
 ];
@@ -154,6 +192,25 @@ List<String> BioChem_firebaseLink = [
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FPRASADS%20textbook%20of%20biochemistry.pdf?alt=media&token=1c9e08e3-f98c-43e0-82e7-3bde2c2f5ac4',
   //Notes:
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2Fsinghal%20biochem.pdf?alt=media&token=7850b063-1126-4298-9add-3169ffd48296',
+  //Dr Rajesh Jambhulkar Notes:
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FAcid%20bas%20balance.pdf?alt=media&token=dfce88ad-ec4e-4e54-9a6d-af8a57b6207c',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FBiological%20oxidation.pdf?alt=media&token=6f484064-b5d7-4edc-842d-7829daed8ff4',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FCancer%20and%20tumor%20markers%20ets.pdf?alt=media&token=c7d64995-3d3e-432e-8d7e-ba456ebc3913',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FCarbohydrates.pdf?alt=media&token=2517a45c-04f3-49c0-b1d8-3a60b0f91a10',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FChromatography.pdf?alt=media&token=edbcc031-9cc6-420d-befe-8a178061a9ba',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FDna%20technology.pdf?alt=media&token=fc5950ef-69bd-4eb0-a704-bb577d19f3e4',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FDna.pdf?alt=media&token=d538437c-d95a-4445-9aa4-807fea83250c',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FEnzymes.pdf?alt=media&token=3fb6f43c-65ed-4e35-bd78-0d70781896c3',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FExtracellular%20matrix.pdf?alt=media&token=6bcfde11-49a3-4d87-977b-2f8678460700',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FHemoglobin%20and%20porphyria.pdf?alt=media&token=0b9a4e70-f1bb-4e33-aadc-810f4a95ff37',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FLipid%20chemistry%20and%20metabolism.pdf?alt=media&token=f1e35dd5-1d19-452c-9075-a81bdb944fe5',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FMineral%20Metabolism.pdf?alt=media&token=c4c60aed-98a2-4724-8484-2e083c0642ef',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FNucleotide%20metabolism.pdf?alt=media&token=9d51c17c-e099-4c0b-92eb-f8978e0f2a5e',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FOrgan%20function%20tests.pdf?alt=media&token=ddcd14f7-4c1d-49a4-883e-7d8822f749d8',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FPlasma%20protiens.pdf?alt=media&token=69c4625b-6f16-411b-b977-63f9accadc27',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FProtein%20chemistry.pdf?alt=media&token=a47ec315-d7da-45df-9455-b8647df169c4',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2FVitamins.pdf?alt=media&token=1b26cd53-b7c1-4361-9115-04fd73b2a8f4',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2Fcarvo.pdf?alt=media&token=6c179122-57cb-43c1-ae08-989d33ca0b8d',
   //Review Books:
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FRebecca_James_Perumcheril_Self_assessment_and_review_of_biochemistry.pdf?alt=media&token=f2439b52-a5c1-412d-aa1e-eba900f99d16',
 ];
@@ -171,8 +228,7 @@ List<String> QuesPaper_teleLink = [
   'https://t.me/app_for_medicos_by_techycrafts/12',
   'https://t.me/app_for_medicos_by_techycrafts/14',
   'https://t.me/app_for_medicos_by_techycrafts/15',
-  //TODO: Need to change below link
-  'https://t.me/app_for_medicos_by_techycrafts/15',
+  'https://t.me/app_for_medicos_by_techycrafts/21',
 ];
 
 List<String> QuesPaper_firebaseLink = [
@@ -180,6 +236,5 @@ List<String> QuesPaper_firebaseLink = [
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Physiology%2FUnique%20Physiology.pdf?alt=media&token=bd60e5a4-bc12-43fe-87b6-0f2d53644373',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FUnique%20Biochemistry.pdf?alt=media&token=7e7a2839-41e7-4601-83df-e5d77f9f5a25',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Miscellaneous%2FUpdated%20Bhalani-3(1).pdf?alt=media&token=2f2386a7-11eb-4091-9289-1e91eecb3e40',
-  //TODO: Need to change below link
-  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Miscellaneous%2FUpdated%20Bhalani-3(1).pdf?alt=media&token=2f2386a7-11eb-4091-9289-1e91eecb3e40'
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Miscellaneous%2FAETCOM%20Module.pdf?alt=media&token=39a3037c-b905-4412-bb42-24c6c0a0a9f9'
 ];
