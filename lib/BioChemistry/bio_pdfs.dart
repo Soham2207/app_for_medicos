@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:app_for_medicos/pdfview.dart';
 import 'package:app_for_medicos/constants/lists.dart' as Constants;
 import 'package:app_for_medicos/BookTile.dart';
 import 'package:app_for_medicos/Headingtile.dart';
