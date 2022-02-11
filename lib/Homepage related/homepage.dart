@@ -24,6 +24,7 @@ class _ExampleState extends State<Example> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Color(0xFF0A0E21),
         centerTitle: true,
         elevation: 20,
         title: const Text(

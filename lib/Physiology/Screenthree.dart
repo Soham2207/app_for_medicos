@@ -21,6 +21,7 @@ class _ScreenthreeState extends State<Screenthree> {
     return Scaffold(
       backgroundColor: Color(0xFF0A0E21),
       appBar: AppBar(
+        backgroundColor: Color(0xFF0A0E21),
         centerTitle: true,
         elevation: 20,
         title: const Text(

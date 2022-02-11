@@ -135,7 +135,7 @@ List<String> Physiology_bookName = [
   'Indu Khurana Physiology',
   'AK Jain – Physiology',
   'Sembulingam Physiology',
-  'GK Pal (Volume 1 and 2)' ,//breakpoint
+  'GK Pal (Volume 1 and 2)', //breakpoint
   //Notes:
   'Physiology Exam Preparatory Manual -Vijaya Joshi',
   'Marrow Notes',
@@ -149,13 +149,13 @@ List<String> Physiology_telelink = [
   'https://t.me/app_for_medicos_by_techycrafts/6',
   'https://t.me/app_for_medicos_by_techycrafts/11',
   'https://t.me/MedFlix_2/832',
-  'https://t.me/MedFlix_2/637', 
+  'https://t.me/MedFlix_2/637',
   'https://t.me/app_for_medicos_by_techycrafts/22', //breakpoint
   //Indian Authors:
   'https://t.me/app_for_medicos_by_techycrafts/9',
   'https://t.me/app_for_medicos_by_techycrafts/8',
   'https://t.me/app_for_medicos_by_techycrafts/10',
-  'https://t.me/app_for_medicos_by_techycrafts/23',//breakpoint
+  'https://t.me/app_for_medicos_by_techycrafts/23', //breakpoint
   //Notes:
   'https://t.me/app_for_medicos_by_techycrafts/7',
   'https://t.me/docinmayking/1228',
@@ -311,4 +311,28 @@ List<String> QuesPaper_firebaseLink = [
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FUnique%20Biochemistry.pdf?alt=media&token=7e7a2839-41e7-4601-83df-e5d77f9f5a25',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Miscellaneous%2FUpdated%20Bhalani-3(1).pdf?alt=media&token=2f2386a7-11eb-4091-9289-1e91eecb3e40',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Miscellaneous%2FAETCOM%20Module.pdf?alt=media&token=39a3037c-b905-4412-bb42-24c6c0a0a9f9',
+];
+
+List<String> Anatomy_video_link = [
+  'https://t.me/Essential_Anatomy/263',
+  'https://t.me/Essential_Anatomy/264',
+  'https://t.me/Essential_Anatomy/265',
+  'https://t.me/Essential_Anatomy/266',
+  'https://t.me/Essential_Anatomy/267',
+  'https://t.me/Essential_Anatomy/268',
+  'https://t.me/app_for_medicos_by_techycrafts/2',
+  'https://www.youtube.com/playlist?list=PLTF9h-T1TcJjUxgs0dqyDCaS-glauXcsL',
+  'https://youtube.com/channel/UCOKHgUB-tHwyH_5ubf8-gLg',
+];
+
+List<String> Anatomy_video_names = [
+  'Atlas of Human Anatomy- The Upper Extremity',
+  'Atlas of Human Anatomy- The Trunk',
+  'Atlas of Human Anatomy- Internal Organs',
+  'Atlas of Human Anatomy- The Lower Extremity',
+  'Atlas of Human Anatomy- Head and Neck Part-1',
+  'Atlas of Human Anatomy- Head and Neck Part-2',
+  'Corpus Hippocraticum Kenhub Videos',
+  'Ninja Nerd - Embryology',
+  'Life in the Womb - Dr.Rose'
 ];
