@@ -1,6 +1,7 @@
 const List<String> Anatomy_bookName = [
   //General Anatomy
   'Vishram Singh: General Anatomy 2nd Edition',
+  'BD Chaurasia General Anatomy',
   //Gross Anatomy
   'Vishram Singh: Upper Limb and Thorax Human Anatomy Vol 1',
   'Vishram Singh: Lower Limb and Abdomen Human Anatomy Vol 2',
@@ -12,24 +13,37 @@ const List<String> Anatomy_bookName = [
   //Embryology
   'Langman: Medical Embryology',
   'Textbook of Clinical Embryology: Vishram Singh',
+  'Inderbir Singh - Human Embryology',
+  'S D Gangane',
   //Histology
   'Inderbir Singh: Textbook of Human Histology',
   //Genetics
   'Human Genetics – SD Gangane',
   //Atlas
   'Netter’s Atlas of Human Anatomy 7th Edition',
+  'Thieme’s Atlas',
   'McMinn’s and Abrahams’ Clinical Atlas of Human Anatomy',
   //Reference
   'Gray’s Anatomy for Students',
   'Moore’s Clinically Oriented Anatomy- 7th Edition',
+  'Keith Moore Embryology',
   'Lange Case Files Anatomy 2nd Edition',
+  'Snell’s Clinical Anatomy',
   //Exam
+  'Vishram Singh Selective Anatomy (Part 1)',
+  'Vishram Singh Selective Anatomy (Part 2)',
+  'SN Kazi (Part1)',
+  'SN Kazi (Part2)',
+  'Marrow Notes',
   'Anatomy- Dr Ashwani Sir Notes',
+  'Dr Rajesh Kaushal',
+  'Dams Notes',
   //Review Books - yet to add
 ];
 const List<String> Anatomy_telegramLink = [
   //General Anatomy
   'https://t.me/MedFlix_2/18',
+  'https://t.me/app_for_medicos_by_techycrafts/43',
   //Gross Anatomy
   'https://t.me/MedFlix_2/17',
   'https://t.me/MedFlix_2/15',
@@ -41,23 +55,36 @@ const List<String> Anatomy_telegramLink = [
   //Embryology
   'https://t.me/MedFlix_2/73',
   'https://t.me/MedFlix_2/82',
+  'https://t.me/app_for_medicos_by_techycrafts/44',
+  'https://t.me/app_for_medicos_by_techycrafts/45',
   //Histology
   'https://t.me/MedFlix_2/1343',
   //Genetics
   'https://t.me/MedFlix_2/78',
   //Atlas
   'https://t.me/MedFlix_2/455',
+  'https://t.me/app_for_medicos_by_techycrafts/47',
   'https://t.me/MedFlix_2/37',
   //Reference
   'https://t.me/MedFlix_2/1547',
   'https://t.me/MedFlix_2/46',
+  'https://t.me/app_for_medicos_by_techycrafts/55',
   'https://t.me/MedFlix_2/643',
+  'https://t.me/app_for_medicos_by_techycrafts/48',
   //Exam
+  'https://t.me/app_for_medicos_by_techycrafts/53',
+  'https://t.me/app_for_medicos_by_techycrafts/54',
+  'https://t.me/app_for_medicos_by_techycrafts/50',
+  'https://t.me/app_for_medicos_by_techycrafts/51',
+  'https://t.me/app_for_medicos_by_techycrafts/49',
   'https://t.me/MedFlix_2/28',
+  'https://t.me/MedFlix_2/38',
+  'https://t.me/app_for_medicos_by_techycrafts/52',
 ];
 const List<String> Anatomy_firebaseLink = [
   //General Anatomy
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FGeneral%20Anatomy%20by%20Vishram%20Singh%20-%202nd%20Edition.pdf?alt=media&token=699182d8-99c4-4874-bc93-460c0c5435b6',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FBD%20Chaurasia%20General%20Anatomy%20(4th%20Ed).pdf?alt=media&token=ee510029-87fd-4dda-9b71-c9ccf8100e8b',
   //Gross Anatomy
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FVishram%20Singh%20Textbook%20of%20Anatomy%20Vol%201.pdf?alt=media&token=59f28593-1332-4cbd-a6a5-c3b32e0273f5',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FVishram%20Singh%20Textbook%20of%20Anatomy%20Vol%202.pdf?alt=media&token=2f45b415-78a4-4693-a324-fe5fcc8dfa03',
@@ -69,19 +96,31 @@ const List<String> Anatomy_firebaseLink = [
   //Embryology
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FLangmans%20Medical%20Embryology%2013%20Edition.pdf?alt=media&token=6f86bbe6-ce5d-46e5-8c03-49875d673adc',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FTextbook%20of%20Clinical%20Embryology-Vishram%20Singh.pdf?alt=media&token=d34e7d20-d307-4816-944f-e3011c3dfc97',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FInderbir%20Singh%E2%80%99s%20Human%20Embryology.pdf?alt=media&token=9b5cd50d-9b9e-4c73-a6ce-54ae14c2ce9c',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FEMBRYOLOGY-S.D.GANGANE.pdf?alt=media&token=e4938b02-c439-426a-ba39-c76bf6a73f3f',
   //Histology
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FIB%20singh%20Histology%20(9th).pdf?alt=media&token=36d0004b-0fb7-451f-8bd9-08b99f3182b1',
   //Genetics
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FHuman%20Genetics.pdf?alt=media&token=61d9d0d7-2850-434a-89fc-f559ecf724a3',
   //Atlas
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FNetters%20Atlas%20of%20Human%20Anatomy%207ed.pdf?alt=media&token=4202eab4-79c7-4be7-a5c1-acf11001df97',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FThieme_Atlas_of_Anatomy%2C_Anne_M.pdf?alt=media&token=74a0a610-fe92-4542-8f55-b881a4631d42',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FMcMinns_and_Abrahams_Clinical_Atlas_of_Human_Anatomy%2C_7th_Edition.pdf?alt=media&token=0d757200-eafc-479e-ac1a-8e8afe17f477',
   //Reference
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FGrays%20Anatomy%20for%20Students%204th%20Edition%20NO%20Watermark.pdf?alt=media&token=bf21c72e-05c6-49da-a569-6a65fb9b8b38',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FMoores%20Clinically%20Oriented%20Anatomy%207E.pdf?alt=media&token=c49bcc59-0a72-4a32-b18e-2930c04cb000',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FThe_Developing_Human_Clinically.pdf?alt=media&token=324bed94-22eb-440d-8089-1e073dbbeff4',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FCase%20Files%20Anatomy%202nd%20Edition.pdf?alt=media&token=4bb47fbe-ffac-47b6-bd7e-cf718ace144e',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FSnells%20Clinical%20Neuroanatomy%207th%20edition.pdf?alt=media&token=b8a5ae65-f5c8-4e60-8968-15f8abf65b3d',
   //Exam
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FSelective%20Anatomy%20Vol1(Vishram%20Singh)(%40MedFlix_2).pdf?alt=media&token=5ca26e49-1a00-4df2-9b68-6873f60f2d1b',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FSelective%20Anatomy%20Vol.%202(Vishram%20Singh).pdf?alt=media&token=92836775-a776-4452-bd2c-f77a6493761a',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FSN%20KAZI%20ANATOMY%20INFEX%202019%20REPRINT.pdf?alt=media&token=dc11e658-75d2-4db5-ade3-56b1bdfc7b8d',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FSN%20KAZI%20ANATOMY%20SUPEX%202019%20REPRINT.pdf?alt=media&token=68bae0fe-b8ea-44fa-8de6-9cb9997614ff',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2Fmarrow%20Ed5%20Anatomy-.pdf?alt=media&token=3187f043-0c61-411d-8dcf-76e7f651a2a2',
   'https://firebasestorage.googleapis.com/v0/b/app-for-medicos-41492.appspot.com/o/Anatomy%2FAnatomy-%20Dr.%20Ashwani%20Sir%20Notes.pdf?alt=media&token=8ed82997-9557-43ab-bfe2-839fe46967c6',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FAnatomy_notes_Rajesh_Kaushal.pdf?alt=media&token=0241fbd3-41f5-4094-8466-beb83a867c3d',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FAnatomy%20Concept%20Book%20DAMS%20(Anatomy%20Decoded%20YouTube).pdf?alt=media&token=95d20572-f665-4300-b47b-9e1b71ef1bdb',
 ];
 
 List<String> Physiology_bookName = [
