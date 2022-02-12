@@ -41,7 +41,7 @@ class _Bio_PDFsState extends State<Bio_PDFs> {
       }
       if (i == 7) {
         containerList.add(
-          Heading(text: 'Dr.Rajesh Jambhulkar Notes'),
+          Heading(text: 'Dr. Rajesh Jambhulkar Notes'),
         );
       }
 

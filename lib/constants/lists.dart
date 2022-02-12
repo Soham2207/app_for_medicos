@@ -213,9 +213,9 @@ List<String> BioChem_bookName = [
   'Plasma Proteins',
   'Protein Chemistry',
   'Vitamins',
-  'Carvo' // breakpoint
-      //Review Books:
-      'Rebecca James Perumcheril Self-assessment and review of Biochem',
+  'Carvo', // breakpoint
+  //Review Books:
+  'Rebecca James Perumcheril Self-assessment and review of Biochem',
 ];
 
 List<String> BioChem_telegramLink = [
@@ -314,37 +314,39 @@ List<String> QuesPaper_firebaseLink = [
 ];
 
 List<String> Anatomy_video_link = [
-  'https://t.me/Essential_Anatomy/263',
-  'https://t.me/Essential_Anatomy/264',
-  'https://t.me/Essential_Anatomy/265',
-  'https://t.me/Essential_Anatomy/266',
-  'https://t.me/Essential_Anatomy/267',
-  'https://t.me/Essential_Anatomy/268',
+  'https://t.me/MedicalVideosRobot',
   'https://t.me/app_for_medicos_by_techycrafts/2',
   'https://www.youtube.com/playlist?list=PLTF9h-T1TcJjUxgs0dqyDCaS-glauXcsL',
   'https://youtube.com/channel/UCOKHgUB-tHwyH_5ubf8-gLg',
+  'https://youtube.com/c/VivaVoceofAnatomy',
+  'https://youtube.com/channel/UC150pgqZXetQ7exFhuT2t3Q',
+  'https://youtube.com/c/virenkariya',
+  'https://youtube.com/c/rajeshkkaushal',
+  'https://youtube.com/c/doctorbhanuprakash',
 ];
 
 List<String> Anatomy_video_names = [
-  'Atlas of Human Anatomy- The Upper Extremity',
-  'Atlas of Human Anatomy- The Trunk',
-  'Atlas of Human Anatomy- Internal Organs',
-  'Atlas of Human Anatomy- The Lower Extremity',
-  'Atlas of Human Anatomy- Head and Neck Part-1',
-  'Atlas of Human Anatomy- Head and Neck Part-2',
+  'Medical Videos bot',
   'Corpus Hippocraticum Kenhub Videos',
   'Ninja Nerd - Embryology',
-  'Life in the Womb - Dr.Rose'
+  'Life in the Womb - Dr.Rose',
+  'Viva Voce of Anatomy',
+  'Dr. Mitesh Dave',
+  'Dr Viren Kariya',
+  'Dr. Rajesh Kaushal',
+  'Dr. G Bhanu Prakash',
 ];
 
 List<String> BioChem_video_links = [
   'https://www.youtube.com/c/BiochemistrybyDrRajeshJambhulkar/playlists',
   'https://www.youtube.com/playlist?list=PLTF9h-T1TcJhy6Og8piwo8doDJavTFOvg',
+  'https://t.me/biochemistry_videos/307',
 ];
 
 List<String> BioChem_video_names = [
   'Biochemistry by Dr Rajesh Jambhulkar',
   'Ninja Nerd - Metabolism',
+  'Pixorize videos',
 ];
 
 List<String> Physiology_video_links = [
@@ -356,6 +358,7 @@ List<String> Physiology_video_links = [
   'https://youtube.com/playlist?list=PLTF9h-T1TcJiMzuj_5OFTxl4Rq-il-UDR',
   'https://youtube.com/playlist?list=PLTF9h-T1TcJjdJppplKVsgPWNQ_beElaG',
   'https://youtube.com/playlist?list=PLTF9h-T1TcJgF4V5joQUhO1inEppADuGb',
+  'https://youtube.com/channel/UCpTNKOgn_gVck7hYl11OW5Q',
 ];
 
 List<String> Physiology_video_names = [
@@ -367,4 +370,5 @@ List<String> Physiology_video_names = [
   'Reproductive',
   'Respiratory Physiology',
   'Special Senses',
+  'MBBS Physiology -Dr. Waqas Khan',
 ];

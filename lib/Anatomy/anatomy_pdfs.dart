@@ -19,31 +19,36 @@ class _AnatomyPdfsState extends State<AnatomyPdfs> {
           Heading(text: 'General Anantomy'),
         );
       }
-      if (i == 1) {
+      if (i == 2) {
         containerList.add(
           Heading(text: 'Gross Anatomy'),
         );
       }
-      if (i == 8) {
+      if (i == 9) {
         containerList.add(
           Heading(text: 'Embryology'),
         );
       }
-      if (i == 10) {
+      if (i == 13) {
         containerList.add(Heading(text: 'Histology'));
       }
-      if (i == 11) {
+      if (i == 14) {
         containerList.add(Heading(text: 'Genetics'));
       }
 
-      if (i == 12) {
+      if (i == 15) {
         containerList.add(
           Heading(text: 'Atlas'),
         );
       }
-      if (i == 14) {
+      if (i == 18) {
         containerList.add(
           Heading(text: 'Reference'),
+        );
+      }
+      if (i == 23) {
+        containerList.add(
+          Heading(text: 'Exam'),
         );
       }
       var newItem = Booktile().BookItem(
