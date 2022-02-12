@@ -55,6 +55,7 @@ class _NewAccountState extends State<NewAccount> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF0A0E21),
         centerTitle: true,
         elevation: 20,
         title: const Text(
