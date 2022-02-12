@@ -336,3 +336,35 @@ List<String> Anatomy_video_names = [
   'Ninja Nerd - Embryology',
   'Life in the Womb - Dr.Rose'
 ];
+
+List<String> BioChem_video_links = [
+  'https://www.youtube.com/c/BiochemistrybyDrRajeshJambhulkar/playlists',
+  'https://www.youtube.com/playlist?list=PLTF9h-T1TcJhy6Og8piwo8doDJavTFOvg',
+];
+
+List<String> BioChem_video_names = [
+  'Biochemistry by Dr Rajesh Jambhulkar',
+  'Ninja Nerd - Metabolism',
+];
+
+List<String> Physiology_video_links = [
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJhp-1zjtApt2lVbQ2JHkY7b',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJjOIhflPV32PZxgcN8wLlvj',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJh9T57G0nls2uGPzzHKMxxh',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJj4AOPCxGxOUTH0IVmaH7_8',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJhB0HeD3fba49FTJuwPN8_O',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJiMzuj_5OFTxl4Rq-il-UDR',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJjdJppplKVsgPWNQ_beElaG',
+  'https://youtube.com/playlist?list=PLTF9h-T1TcJgF4V5joQUhO1inEppADuGb',
+];
+
+List<String> Physiology_video_names = [
+  'Cardiovascular Physiology',
+  'Endocrinology',
+  'Hematology',
+  'Immunology',
+  'Renal Physiology',
+  'Reproductive',
+  'Respiratory Physiology',
+  'Special Senses',
+];

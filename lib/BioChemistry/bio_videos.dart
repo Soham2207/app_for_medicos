@@ -1,80 +1,28 @@
 import 'package:flutter/material.dart';
 import '../../launchUrl.dart';
+import 'package:app_for_medicos/constants/lists.dart' as Constants;
+import 'package:app_for_medicos/VideosTile.dart';
 
 class Bio_videos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFF0A0E21),
+      color: Colors.black,
       child: ListView(
-        children: <Widget>[
-          Container(
-            color: Color(0xFF1D1E33),
-            child: TextButton(
-              onPressed: () {
-                LaunchUrl().createState().openTelegram(
-                    'https://www.youtube.com/c/BiochemistrybyDrRajeshJambhulkar/playlists');
-              },
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 2,
-                    child: Text(
-                      'Biochemistry by Dr Rajesh Jambhulkar',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Icon(
-                      Icons.arrow_right,
-                      color: Colors.blue,
-                      size: 80.0,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Divider(
-            height: 3.0,
-          ),
-          Container(
-            color: Color(0xFF1D1E33),
-            child: TextButton(
-              onPressed: () {
-                LaunchUrl().createState().openTelegram(
-                    'https://www.youtube.com/playlist?list=PLTF9h-T1TcJhy6Og8piwo8doDJavTFOvg');
-              },
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 2,
-                    child: Text(
-                      'Ninja Nerd - Metabolism',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Icon(
-                      Icons.arrow_right,
-                      color: Colors.blue,
-                      size: 80.0,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
+        children: getcontainers(),
       ),
     );
+  }
+
+  List<Widget> getcontainers() {
+    List<Widget> containers = [];
+    for (int i = 0; i < Constants.BioChem_video_names.length; i++) {
+      containers.add(
+        VideoTile(
+            title: Constants.BioChem_video_names[i],
+            link: Constants.BioChem_video_links[i]),
+      );
+    }
+    return containers;
   }
 }
