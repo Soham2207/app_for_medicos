@@ -60,46 +60,16 @@ class _AccountState extends State<Account> {
           Padding(
             padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 10.0),
             child: TextButton(
-                onPressed: () {
-                  LaunchUrl().createState().openTelegram(
-                      'https://play.google.com/store/apps/details?id=com.ichi2.anki');
-                },
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      flex: 2,
-                      child: Text(
-                        'Download AnkiDroid App',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Icon(
-                        Icons.arrow_circle_down_outlined,
-                        size: 30.0,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    )
-                  ],
-                )),
-          ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
-            child: TextButton(
               onPressed: () {
                 LaunchUrl().createState().openTelegram(
-                    'https://moddroid.com/human-anatomy-atlas-2021.html');
+                    'https://play.google.com/store/apps/details?id=com.ichi2.anki');
               },
               child: Row(
                 children: <Widget>[
                   Expanded(
                     flex: 2,
                     child: Text(
-                      'Download Human Anatomy Atlas 2021 App',
+                      'Download AnkiDroid App',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
@@ -113,7 +83,7 @@ class _AccountState extends State<Account> {
                       size: 30.0,
                       color: Colors.lightBlueAccent,
                     ),
-                  ),
+                  )
                 ],
               ),
             ),

@@ -108,11 +108,12 @@ class _AnatomyAppsAndFlashcardsState extends State<AnatomyAppsAndFlashcards> {
               ),
             ),
           ),
+           
           Padding(
             padding: EdgeInsets.fromLTRB(20.0, 20.0, 0.0, 10.0),
             child: Container(
               child: Text(
-                'Download Apps from Telegram',
+                'Download Apps from Google',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -120,6 +121,7 @@ class _AnatomyAppsAndFlashcardsState extends State<AnatomyAppsAndFlashcards> {
               ),
             ),
           ),
+          
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Container(
@@ -127,7 +129,7 @@ class _AnatomyAppsAndFlashcardsState extends State<AnatomyAppsAndFlashcards> {
               child: TextButton(
                 onPressed: () {
                   LaunchUrl().createState().openTelegram(
-                      'https://t.me/app_for_medicos_by_techycrafts/17');
+                      'https://play.google.com/store/apps/details?id=com.vli.histograms');
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -135,7 +137,7 @@ class _AnatomyAppsAndFlashcardsState extends State<AnatomyAppsAndFlashcards> {
                     Expanded(
                       flex: 2,
                       child: Text(
-                        'Dr. Najeeb\'s App',
+                        'Download Human Anatomy Atlas 2021 App',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 20.0,
