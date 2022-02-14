@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../launchUrl.dart';
 import 'package:app_for_medicos/constants/lists.dart' as Constants;
 import 'package:app_for_medicos/VideosTile.dart';
 

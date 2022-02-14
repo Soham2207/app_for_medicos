@@ -60,7 +60,13 @@ class _AnatomyPdfsState extends State<AnatomyPdfs> {
       );
       containerList.add(newItem);
       if (i < Constants.Anatomy_bookName.length - 1 &&
-          (i == 0 || i == 7 || i == 9 || i == 10 || i == 11 || i == 13)) {
+          (i == 1 ||
+              i == 8 ||
+              i == 12 ||
+              i == 14 ||
+              i == 17 ||
+              i == 13 ||
+              i == 22)) {
         var newdivider = Divider(
           height: 3.0,
           color: Colors.white,

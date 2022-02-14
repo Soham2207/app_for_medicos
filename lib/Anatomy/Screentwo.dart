@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'anatomy_pdfs.dart';
 import 'anatomy_videos.dart';
 import 'anatomy_apps_flashcards.dart';
@@ -23,7 +22,7 @@ class _ScreentwoState extends State<Screentwo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0A0E21),
       appBar: AppBar(
         backgroundColor: Color(0xFF0A0E21),
         centerTitle: true,
