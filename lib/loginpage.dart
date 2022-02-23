@@ -76,6 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+                textInputAction: TextInputAction.next,
               ),
               SizedBox(
                 height: 30.0,

@@ -38,6 +38,8 @@ const List<String> Anatomy_bookName = [
   'Anatomy- Dr Ashwani Sir Notes',
   'Dr Rajesh Kaushal',
   'Dams Notes',
+  'VG Sawant SAQs',
+  'Anatomy Exam Oriented',
   //Review Books - yet to add
 ];
 const List<String> Anatomy_telegramLink = [
@@ -80,6 +82,8 @@ const List<String> Anatomy_telegramLink = [
   'https://t.me/MedFlix_2/28',
   'https://t.me/MedFlix_2/38',
   'https://t.me/app_for_medicos_by_techycrafts/52',
+  'https://t.me/app_for_medicos_by_techycrafts/60',
+  'https://t.me/app_for_medicos_by_techycrafts/59',
 ];
 const List<String> Anatomy_firebaseLink = [
   //General Anatomy
@@ -121,6 +125,8 @@ const List<String> Anatomy_firebaseLink = [
   'https://firebasestorage.googleapis.com/v0/b/app-for-medicos-41492.appspot.com/o/Anatomy%2FAnatomy-%20Dr.%20Ashwani%20Sir%20Notes.pdf?alt=media&token=8ed82997-9557-43ab-bfe2-839fe46967c6',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FAnatomy_notes_Rajesh_Kaushal.pdf?alt=media&token=0241fbd3-41f5-4094-8466-beb83a867c3d',
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FAnatomy%20Concept%20Book%20DAMS%20(Anatomy%20Decoded%20YouTube).pdf?alt=media&token=95d20572-f665-4300-b47b-9e1b71ef1bdb',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FVG%20Sawant%20SAQs.pdf?alt=media&token=beb61e04-635b-4fd1-8f39-3485809fe5d5',
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Anatomy%2FAnatomy%20Exam%20oriented.pdf?alt=media&token=0a767991-1060-4b66-a5f2-d1f21469abb9',
 ];
 
 List<String> Physiology_bookName = [
@@ -139,7 +145,7 @@ List<String> Physiology_bookName = [
   'Physiology Exam Preparatory Manual -Vijaya Joshi',
   'Marrow Notes',
   'Unique Physiology',
-  'BJ Notes',
+  'JJ Notes',
   'Physicon (Guyton Summary)'
 ];
 
@@ -216,6 +222,8 @@ List<String> BioChem_bookName = [
   'Carvo', // breakpoint
   //Review Books:
   'Rebecca James Perumcheril Self-assessment and review of Biochem',
+  //Exam
+  'Biochem Exam Oriented',
 ];
 
 List<String> BioChem_telegramLink = [
@@ -251,6 +259,8 @@ List<String> BioChem_telegramLink = [
   'https://t.me/app_for_medicos_by_techycrafts/42',
   //Review Books:
   'https://t.me/MedFlix_2/121',
+  //Exam
+  'https://t.me/app_for_medicos_by_techycrafts/57',
 ];
 
 List<String> BioChem_firebaseLink = [
@@ -286,6 +296,8 @@ List<String> BioChem_firebaseLink = [
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FDr%20Rajesh%20Jambhulkar%20biochem%20notes%2Fcarvo.pdf?alt=media&token=6c179122-57cb-43c1-ae08-989d33ca0b8d',
   //Review Books:
   'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FRebecca_James_Perumcheril_Self_assessment_and_review_of_biochemistry.pdf?alt=media&token=f2439b52-a5c1-412d-aa1e-eba900f99d16',
+  //Exam
+  'https://firebasestorage.googleapis.com/v0/b/appformedicos.appspot.com/o/Biochemistry%2FBiochem%20Exam%20oriented%20.pdf?alt=media&token=1cb8b9e0-7df7-45a1-9ba7-445999f03beb',
 ];
 
 List<String> QuesPaper_Name = [
@@ -323,6 +335,7 @@ List<String> Anatomy_video_link = [
   'https://youtube.com/c/virenkariya',
   'https://youtube.com/c/rajeshkkaushal',
   'https://youtube.com/c/doctorbhanuprakash',
+  'https://youtube.com/playlist?list=PLqTetbgey0afCpIjY3lDdXxSEeJmxVHK8',
 ];
 
 List<String> Anatomy_video_names = [
@@ -335,6 +348,7 @@ List<String> Anatomy_video_names = [
   'Dr Viren Kariya',
   'Dr. Rajesh Kaushal',
   'Dr. G Bhanu Prakash',
+  'Armando Hasudungan',
 ];
 
 List<String> BioChem_video_links = [
@@ -359,6 +373,7 @@ List<String> Physiology_video_links = [
   'https://youtube.com/playlist?list=PLTF9h-T1TcJjdJppplKVsgPWNQ_beElaG',
   'https://youtube.com/playlist?list=PLTF9h-T1TcJgF4V5joQUhO1inEppADuGb',
   'https://youtube.com/channel/UCpTNKOgn_gVck7hYl11OW5Q',
+  'https://youtube.com/playlist?list=PLY33uf2n4e6N6-2yWcB3k26LqnwzfyG6C',
 ];
 
 List<String> Physiology_video_names = [
@@ -371,4 +386,5 @@ List<String> Physiology_video_names = [
   'Respiratory Physiology',
   'Special Senses',
   'MBBS Physiology -Dr. Waqas Khan',
+  'Osmosis',
 ];
