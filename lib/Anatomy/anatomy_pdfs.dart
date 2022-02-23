@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app_for_medicos/constants/lists.dart' as Constants;
 import 'package:app_for_medicos/Headingtile.dart';
 import 'package:app_for_medicos/BookTile.dart';
+import '../launchUrl.dart';
 
 class AnatomyPdfs extends StatefulWidget {
   @override
@@ -9,6 +10,39 @@ class AnatomyPdfs extends StatefulWidget {
 }
 
 class _AnatomyPdfsState extends State<AnatomyPdfs> {
+  Widget telegramBook(String bookName, String link) {
+    return Container(
+      color: Color(0xFF1D1E33),
+      child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Text(
+              bookName,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          TextButton(
+            onPressed: () {
+              LaunchUrl().createState().openTelegram(link);
+            },
+            child: Text(
+              'Open in Telegram',
+              style: TextStyle(
+                color: Color(0xFF7D7D7D),
+                fontSize: 20.0,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
   @override
   List<Widget> getContainers() {
     List<Widget> containerList = [];
@@ -51,6 +85,11 @@ class _AnatomyPdfsState extends State<AnatomyPdfs> {
           Heading(text: 'Exam'),
         );
       }
+      if (i == 12) {
+        containerList.add(telegramBook('Textbook of Human Embryology',
+            'https://t.me/app_for_medicos_by_techycrafts/69'));
+      }
+
       var newItem = Booktile().BookItem(
         i: i,
         bookName: Constants.Anatomy_bookName,
@@ -59,13 +98,14 @@ class _AnatomyPdfsState extends State<AnatomyPdfs> {
         Ncontext: context,
       );
       containerList.add(newItem);
+
       if (i < Constants.Anatomy_bookName.length - 1 &&
           (i == 1 ||
               i == 8 ||
               i == 12 ||
+              i == 13 ||
               i == 14 ||
               i == 17 ||
-              i == 13 ||
               i == 22)) {
         var newdivider = Divider(
           height: 3.0,
