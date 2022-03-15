@@ -336,6 +336,8 @@ List<String> Anatomy_video_link = [
   'https://youtube.com/c/rajeshkkaushal',
   'https://youtube.com/c/doctorbhanuprakash',
   'https://youtube.com/playlist?list=PLqTetbgey0afCpIjY3lDdXxSEeJmxVHK8',
+  'https://www.youtube.com/c/minass',
+  'https://www.youtube.com/c/AboutMedicine',
 ];
 
 List<String> Anatomy_video_names = [
@@ -349,6 +351,8 @@ List<String> Anatomy_video_names = [
   'Dr. Rajesh Kaushal',
   'Dr. G Bhanu Prakash',
   'Armando Hasudungan',
+  'Embryology by Dr. Minass',
+  'About Medicine',
 ];
 
 List<String> BioChem_video_links = [
